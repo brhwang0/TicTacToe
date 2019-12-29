@@ -8,6 +8,10 @@
   Player {{winner}} won the game!
 </h2>
 
+<h2 *ngIf="movesMade == 9">
+  Draw!
+</h2>
+
 <main>
   <app-square
     *ngFor="let val of squares; let i = index"
