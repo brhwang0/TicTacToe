@@ -28,7 +28,6 @@ export class BoardComponent implements OnInit {
   }
 
   makeMove(idx:number) {
-    console.log("hello");
     if (!this.squares[idx]) {
       this.squares.splice(idx, 1, this.player);
       this.xIsNext = !this.xIsNext;
@@ -55,8 +54,8 @@ export class BoardComponent implements OnInit {
       if (this.squares[a] && this.squares[a] === this.squares[b] && this.squares[a] === this.squares[c]) {
         return this.squares[a];
       }
-      return null;
     }
+    return null;
 
   }
 
